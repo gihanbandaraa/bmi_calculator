@@ -2,6 +2,8 @@ import 'package:demo_app/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
+import 'gender_tile_widget.dart';
+
 class BmiCalculatorPage extends StatefulWidget {
   const BmiCalculatorPage({super.key});
 
@@ -65,57 +67,39 @@ class _BmiCalculatorPageState extends State<BmiCalculatorPage> {
                     children: [
                       Expanded(
                         flex: 10,
-                        child: GestureDetector(
-                          onTap: () => setState(() {
+                        child: GenderTileWidget(
+                          isMale: isMale,
+                          text: "Male",
+                          icon: Icons.male,
+                          onTap: () {
                             isMale = true;
-                          }),
-                          child: Container(
-                            padding: EdgeInsets.all(20),
-                            decoration: isMale
-                                ? kSelectedTileBorderDecoration
-                                : kTileBorderDecoration,
-                            child: const Column(children: [
-                              Icon(
-                                Icons.male,
-                                size: 50,
-                                color: kActiveTextColor,
-                              ),
-                              Text("Male",
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.bold,
-                                    color: kActiveTextColor,
-                                  )),
-                            ]),
-                          ),
+                            var bmiValue = calculateBMI(
+                              weight,
+                              height,
+                            );
+                            setState(() {
+                              bmi = bmiValue;
+                            });
+                          },
                         ),
                       ),
                       Spacer(),
                       Expanded(
                         flex: 10,
-                        child: GestureDetector(
-                          onTap: () => setState(() {
+                        child: GenderTileWidget(
+                          isMale: !isMale,
+                          icon: Icons.female,
+                          text: "Female",
+                          onTap: () {
                             isMale = false;
-                          }),
-                          child: Container(
-                            padding: EdgeInsets.all(20),
-                            decoration: !isMale
-                                ? kSelectedTileBorderDecoration
-                                : kTileBorderDecoration,
-                            child: const Column(children: [
-                              Icon(
-                                Icons.female,
-                                size: 50,
-                                color: kActiveTextColor,
-                              ),
-                              Text("Female",
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.bold,
-                                    color: kActiveTextColor,
-                                  )),
-                            ]),
-                          ),
+                            var bmiValue = calculateBMI(
+                              weight,
+                              height,
+                            );
+                            setState(() {
+                              bmi = bmiValue;
+                            });
+                          },
                         ),
                       ),
                     ],
