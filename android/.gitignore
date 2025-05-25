@@ -1,0 +1,147 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+migrate_working_dir/
+*.tmp
+*.temp
+*.bak
+*.orig
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# VSCode related
+.vscode/
+*.code-workspace
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+.build/
+.flutter-*
+generated_plugin_registrant.dart
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio/Gradle related
+/android/app/debug
+/android/app/profile
+/android/app/release
+/android/app/intermediates
+/android/app/generated
+/android/app/outputs
+/android/app/tmp
+/android/app/.cxx
+/android/app/.externalNativeBuild
+/android/app/.gradle
+/android/app/.idea
+.gradle/
+local.properties
+
+# iOS related
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
+ios/Flutter/app.flx
+ios/Flutter/app.zip
+ios/Flutter/engine
+ios/Flutter/ephemeral/
+ios/Flutter/Flutter.podspec
+ios/ServiceDefinitions.json
+ios/Runner.xcworkspace/
+ios/Runner.xcuserstate
+ios/Runner.xcuserdatad/
+ios/Podfile.lock
+
+# Xcode related
+*.xcuserstate
+*.xcworkspace
+*.xcuserdata
+*.xccheckout
+*.moved-aside
+*.xcuserdatad
+*.xcscmblueprint
+
+# macOS related
+macos/Flutter/ephemeral/
+macos/Pods/
+macos/Podfile.lock
+
+# Windows related
+windows/Flutter/ephemeral/
+windows/.vs/
+windows/Debug/
+windows/Release/
+windows/x64/
+windows/x86/
+windows/runner/Debug/
+windows/runner/Release/
+windows/runner/x64/
+windows/runner/x86/
+
+# Linux related
+linux/Flutter/ephemeral/
+linux/Debug/
+linux/Release/
+linux/x64/
+linux/x86/
+linux/runner/Debug/
+linux/runner/Release/
+linux/runner/x64/
+linux/runner/x86/
+
+# Web related
+web/.dart_tool/
+web/build/
+
+# Coverage
+coverage/
+*.lcov
+
+# Crashlytics
+crashlytics-build.properties
+
+# Firebase
+firebase_app_id_file.json
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# Others
+*.lock
+*.pid
+*.seed
+*.log
+*.gz
+*.zip
+*.tar
+*.tgz
+*.7z
+*.rar
+*.sublime-workspace
+*.sublime-project
